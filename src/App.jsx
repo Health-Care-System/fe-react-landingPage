@@ -1,10 +1,14 @@
 import './App.css'
+import { HomePage } from './pages/Home/HomePage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <btn type='button' className="btn btn-primary">Test</btn>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

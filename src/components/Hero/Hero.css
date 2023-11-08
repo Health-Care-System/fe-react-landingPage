@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../../font/Poppins-Medium.ttf") format('truetype');
+}
+  
+.text-poppins {
+    font-family: 'Poppins', sans-serif;
+}
