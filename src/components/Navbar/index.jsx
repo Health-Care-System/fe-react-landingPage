@@ -4,7 +4,7 @@ import Logo from "../../image/logo-health.png"
 export const Navbar = () => {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
             <div className="container-fluid">
                 <img src={Logo} alt="" width={40}/>
                 <Link className="navbar-brand mx-2 fw-bold" style={{color:"#149BDB"}}>

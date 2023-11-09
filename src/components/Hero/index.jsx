@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Play from "../../image/Group.svg"
 import "./Hero.css"
 
+// eslint-disable-next-line react/prop-types
 export const Hero = ({ isReverse, heading, text, image, showPlay, backgroundColor, textSubline }) => {
     const imageClass = isReverse ? "order-lg-last" : "order-lg-first";
     const heroStyle = { backgroundColor: backgroundColor };
@@ -9,29 +10,26 @@ export const Hero = ({ isReverse, heading, text, image, showPlay, backgroundColo
 
     return (
       <div style={heroStyle} className="text-poppins">
-        <div className="container col-xxl-8 px-4 py-5">
-            <div className="row g-5 py-5">
-                <div className={`col-10 col-sm-8 col-lg-5 ${imageClass}`}>
+        <div className="container px-4 py-5">
+            <div className="py-5 hero-body">
+                <div className={`${imageClass} image`}>
                     <img
                         src={image}
-                        className="d-block mx-lg-auto img-fluid"
+                        className="hero-image"
                         alt="Bootstrap Themes"
-                        width={300}
-                        height={200}
-                        loading="lazy"
                     />
                 </div>
-                <div className="col-lg-7">
-                    <h1 className="display-6 fw-bold text-body-emphasis lh-1 mb-3">
+                <div className="col-lg-7 hero-text">
+                    <h1 className="fw-bold text-body-emphasis mb-3">
                         {heading}
                     </h1>
                     <p style={textSub}>
                         {text}
                     </p>
-                    <div className="d-grid gap-2 d-md-flex mt-5 justify-content-md-start">
+                    <div className="d-grid gap-2 mt-4">
                         {showPlay && (
                             <Link to="https://play.google.com">
-                                <img src={Play} alt="" />
+                                <img src={Play} className="img-play" alt="" />
                             </Link>
                         )}
                     </div>
