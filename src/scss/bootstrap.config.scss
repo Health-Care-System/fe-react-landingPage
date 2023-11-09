@@ -1,0 +1,12 @@
+// Color
+$primary: #008772;
+$success: #199E50;
+$info: #1766D7;
+$warning: #FCD200;
+$danger: #D8243C;
+$color-text: #ffffff;
+
+// Typography
+$font-family-base: 'Inter', sans-serif;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
