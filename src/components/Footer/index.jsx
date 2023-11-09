@@ -17,7 +17,7 @@ export const Footer = () => {
 
     return (
         <footer>
-            <div className='mx-auto' style={{ maxWidth:'82rem'}}>
+            <div className='mx-auto' style={{ maxWidth:'86rem'}}>
                 <div className="pt-5 pb-3 mx-4">
                     <Link to="/">
                         <img src={Logo} alt="Bootstrap" />
@@ -26,7 +26,7 @@ export const Footer = () => {
                         <ListItem data={sitemaps} title={'Sitemap'} haveImage={false} />
                         <ListItem data={company} title={'Company'} haveImage={false} />
                         <ListItem data={callUs} title={'Hubungi Kami'} haveImage={true} />
-                        <div className="col-lg-4 col-md-6 mb-4 mb-md-0" >
+                        <div className="col-xl-4 col-md-6 mb-4 mb-md-0" >
                             <h5 className='fw-semibold'>Layanan Pengaduan Konsumen</h5>
                             <h5 className='fw-semibold'>PT Sentra Sehat Sentosa</h5>
                             <address className='flex-wrap'>
@@ -36,7 +36,7 @@ export const Footer = () => {
                                     0853 1111 1010 (WhatsApp)</p>
                             </address>
                         </div>
-                        <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <div className="col-xl-2 col-md-6 mb-4 mb-md-0">
                             <h5>Download Aplikasi di</h5>
                             <Link to="https://play.google.com">
                                 <img src={Play} alt="play" className="mt-2 mb-md-3 image-play" />
@@ -56,7 +56,7 @@ export const Footer = () => {
 export const ListItem = ({ data, title, haveImage }) => {
     return (
         <>
-            <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <div className="col-xl-2 col-md-6 mb-4 mb-md-4 mb-lg-0">
                 <h5 className=' fw-semibold'>{title}</h5>
                 <ul className="nav flex-column">
                     {data?.map((item, index) => (

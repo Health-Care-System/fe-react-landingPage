@@ -5,7 +5,7 @@ export const Navbar = () => {
     return (
       <div>
         <nav className="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-            <div className="container-fluid">
+            <div className="container">
                 <img src={Logo} alt="" width={40}/>
                 <Link className="navbar-brand mx-2 fw-bold" style={{color:"#149BDB"}}>
                     Healthify

@@ -6,7 +6,7 @@ export const JoinUs = () => {
     return (
       <div className="join">
         <div className="row justify-content-center align-items-center" style={{ paddingBottom:'11rem', paddingTop: '13rem'}}>
-            <div className="col-md-9">
+            <div style={{ width: '86rem'}}>
                 <div className="h-100 p-5 text-center card-box">
                     <h2 className="fw-semibold">Mari Bergabung Bersama Kami!</h2>
                     <p className="text-center mx-auto" style={{ maxWidth: '32rem'}}>Semua orang bisa sehat. Penuhi kebutuhan sehatmu bersama kami. Kami siap melayani anda
