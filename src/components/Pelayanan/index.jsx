@@ -8,9 +8,9 @@ export const Pelayanan = () => {
     return (
       <div className="mt-5 mb-5 d-flex justify-content-center align-items-center">
         <div className="container p-0 m-5 m-md-4 row">
-            <div className="col">
-                <div className="card" style={{height:"412px"}}>
-                    <img src={Konsultasi} className="card-img-top" alt="pembayaran"/>
+            <div className="col-12 col-md-6 col-lg-3 kotak">
+                <div className="card shadow" style={{height:"412px"}}>
+                    <img src={Konsultasi} className="card-img-top" alt="pembayaran" style={{ height: "200px", objectFit: "cover" }}/>
                     <div className="card-body">
                         <h5 className="card-title text-center text-secondary">Konsultasi Semakin Mudah</h5>
                         <p className="card-text text-center text-subline">
@@ -19,9 +19,9 @@ export const Pelayanan = () => {
                     </div>
                 </div>
             </div>
-            <div className="col">
-                <div className="card" style={{height:"413px"}}>
-                    <img src={Pembayaran} className="card-img-top" alt="pembayaran"/>
+            <div className="col-12 col-md-6 col-lg-3 kotak">
+                <div className="card shadow" style={{height:"413px"}}>
+                    <img src={Pembayaran} className="card-img-top" alt="pembayaran" style={{ height: "200px", objectFit: "cover" }}/>
                     <div className="card-body">
                         <h5 className="card-title text-center text-secondary">Pembayaran Lebih Fleksibel</h5>
                         <p className="card-text text-center text-subline">
@@ -30,9 +30,9 @@ export const Pelayanan = () => {
                     </div>
                 </div>
             </div>
-            <div className="col">
-                <div className="card" style={{height:"414px"}}>
-                    <img src={Medicine} className="card-img-top" alt="medicine" style={{width: 200, height: 205, padding: 20}}/>
+            <div className="col-12 col-md-6 col-lg-3 kotak">
+                <div className="card shadow" style={{height:"414px"}}>
+                    <img src={Medicine} className="card-img-top" alt="medicine" style={{ height: "200px", objectFit: "cover" }}/>
                     <div className="card-body">
                         <h5 className="card-title text-center text-secondary">Produk Kesehatan Lengkap</h5>
                         <p className="card-text text-center text-subline">
@@ -41,9 +41,9 @@ export const Pelayanan = () => {
                     </div>
                 </div>
             </div>
-            <div className="col">
-                <div className="card">
-                    <img src={Apotek} className="card-img-top" alt="apotek" style={{width: 200, height: 205, padding: 20}}/>
+            <div className="col-12 col-md-6 col-lg-3 kotak">
+                <div className="card shadow" style={{height:"414px"}}>
+                    <img src={Apotek} className="card-img-top" alt="apotek" style={{ height: "200px", objectFit: "cover" }}/>
                     <div className="card-body">
                         <h5 className="card-title text-center text-secondary">Pelayanan Apotek 24 Jam</h5>
                         <p className="card-text text-center text-subline">

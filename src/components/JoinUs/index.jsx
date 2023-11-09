@@ -4,7 +4,7 @@ import "./JoinUs.css"
 
 export const JoinUs = () => {
     return (
-      <div>
+      <div className="join">
         <div className="row justify-content-center align-items-center" style={{ height: "100vh" }}>
             <div className="col-md-9">
                 <div className="h-100 p-5 text-center card-box">

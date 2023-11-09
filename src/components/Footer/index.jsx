@@ -8,18 +8,18 @@ import "./Footer.css"
 
 export const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
         <div className="container">
-            <footer className="py-5">
-                <div className="row">
+            <div className="py-5">
                     <div className="d-flex align-items-center mb-3">
                         <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
                             <img src= {Logo} alt="Bootstrap" width={80} height={62}  />
                         </a>
                         <h3 style={{color: "#149BDB"}}>Healthify</h3>
                     </div> 
-
-                    <div className="col-6 col-md-2 p-2 mb-3" >
+                    <div className="row">
+    
+                    <div className="col-lg-2 col-md-6 mb-4 mb-md-0" >
                         <h5>Sitemap</h5>
                         <ul className="nav flex-column">
                         <li className="nav-item mb-2">
@@ -44,8 +44,8 @@ export const Footer = () => {
                         </li>
                         </ul>
                     </div>
-
-                    <div className="col-6 col-md-2 p-2 mb-3">
+    
+                    <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                         <h5>Perusahaan</h5>
                         <ul className="nav flex-column">
                         <li className="nav-item mb-2">
@@ -65,8 +65,8 @@ export const Footer = () => {
                         </li>
                         </ul>
                     </div>
-
-                    <div className="col-6 col-md-2 p-2 me-3 mb-3">
+    
+                    <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
                         <h5>Hubungi Kami</h5>
                         <ul className="nav flex-column">
                             <li className="nav-item mb-2">
@@ -89,20 +89,20 @@ export const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
-                    <div className="col-6 col-md-4 p-2 mx-3 mb-3" >
+    
+                    <div className="col-lg-4 col-md-6 mb-4 mb-md-0 kelompok" >
                         <h5>Layanan Pengaduan Konsumen</h5>
-                        <h4>PT Sentra Sehat Sentosa</h4>
+                        <h5>PT Sentra Sehat Sentosa</h5>
                         <p>Jl. H.R. Rasuna Said Kav b32-33. Jakarta Selatan 021-2233-4515</p>
                         <p>Direktorat Jenderal Perlindungan Konsumen dan
                             Tertib Niaga Kementrian Perdagangan Republik Indonesia<br></br> 
                             0853 1111 1010 (WhatsApp)</p>
                     </div>
-
-                    <div className="col-6 col-md-1 p-2 mb-3">
+    
+                    <div className="col-lg-1 col-md-6 mb-4 mb-md-0">
                         <h5>Download Aplikasi di</h5>
                         <Link to="https://play.google.com">
-                            <img src={Play} alt="play" className="mt-2" style={{width:"130px"}} />
+                            <img src={Play} alt="play" className="mt-2 mb-md-3 image-play"/>
                         </Link>
                     </div>
                 </div>
@@ -110,8 +110,8 @@ export const Footer = () => {
                 <div className="d-flex flex-column border-top">
                     <p className="text-center text-white mt-3">Copyright © Healthify 2023</p>
                 </div>
-            </footer>
+            </div>
         </div>
-        </div>
+        </footer>
     )
 }

@@ -6,3 +6,42 @@
 .text-poppins {
     font-family: 'Poppins', sans-serif;
 }
+
+.hero-body{
+    text-align: center;
+}
+
+.hero-image{
+    text-align: center;
+    width: 240px;
+    margin-bottom: 2rem;
+}
+
+.img-play{
+    width: 200px;
+}
+
+@media(min-width: 768px){
+    .hero-image{
+        text-align: center;
+    }
+
+    .img-play{
+        text-align: center;
+    }
+}
+
+@media(min-width: 992px){
+    .hero-text{
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .hero-body{
+        display: flex;
+    }
+
+    .image{
+        margin-left: 100px;
+    }
+}
