@@ -1,6 +1,9 @@
 .text-subline{
     color: #07287C;
 }
+.max-w-15 {
+  max-width: 15.875rem;
+}
 
 .kotak {
   padding: 2.0625rem 0rem; 

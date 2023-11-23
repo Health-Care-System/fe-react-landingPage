@@ -5,6 +5,40 @@
 }
 
 body{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F8F8;
+}
+.bg-base {
+  background-color: #F8F8F8;
+}
+.text-green-300 {
+  color: #00444E;
+}
+.max-w-content {
+  max-width: 39.425rem;
+}
+.fs-7 {
+  font-size: 0.875rem;
+}
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+}
 
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.max-w-base {
+  max-width: 90rem;
+}
+
+.brand-logo {
+  width: 8.4rem;
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 14.4375rem;
+  }
 }

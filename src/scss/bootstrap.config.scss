@@ -6,7 +6,15 @@ $warning: #FCD200;
 $danger: #D8243C;
 $color-text: #ffffff;
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
 // Typography
-$font-family-base: 'Inter', sans-serif;
+$font-family-base: 'Roboto', 'Poppins', sans-serif;;
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
