@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Play from "../../image/Group.svg"
 import "./Hero.css"
 export const Hero = ({
@@ -30,9 +29,9 @@ export const Hero = ({
                 </p>
                 }
                 {showPlay && (
-                    <Link to="https://play.google.com">
+                    <a target="_blank" rel="noreferrer" href="https://play.google.com">
                         <img src={Play} className="img-play" alt="" />
-                    </Link>
+                    </a>
                 )}
             </div>
         </section>

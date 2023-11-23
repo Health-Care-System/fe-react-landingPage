@@ -12,6 +12,7 @@ import konsultasi from '../../assets/image/konsultasi.png'
 import mockupMobileApp from '../../assets/image/mockupMobileApp.png'
 import nabung from '../../assets/image/nabung.png'
 import androidVector from "../../assets/image/androidVector.png"
+import { Faq } from "../../components/Faq/Faq"
 
 export const HomePage = () => {
   return (
@@ -74,6 +75,7 @@ export const HomePage = () => {
          showPlay={true}
       />
       <Testimoni/>
+      <Faq />
       <JoinUs/>
       </main>
       <Footer/>

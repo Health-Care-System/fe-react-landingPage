@@ -13,7 +13,7 @@ export const Pelayanan = () => {
     ]
 
     return (
-        <div className="mt-5 mb-5 d-flex justify-content-center align-items-center">
+        <div className="my-10 d-flex justify-content-center align-items-center">
             <div className="row gap-3">
                 {listPelayanan?.map((item, index) => (
                     <div key={index} className="card mx-auto rounded-4 border-0 shadow d-flex align-items-center justify-content-center" style={{ maxWidth: '16.87rem' }}>

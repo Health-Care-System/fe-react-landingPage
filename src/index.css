@@ -14,11 +14,17 @@ body{
 .text-green-300 {
   color: #00444E;
 }
+.bg-green-300 {
+  background-color: #00444E;
+}
 .max-w-content {
   max-width: 39.425rem;
 }
 .fs-7 {
   font-size: 0.875rem;
+}
+.my-10 {
+  margin: 5rem 0;
 }
 .avatar {
   vertical-align: middle;
@@ -40,5 +46,8 @@ body{
 @media (min-width: 768px) {
   .brand-logo {
     width: 14.4375rem;
+  }
+  .my-10 {
+    margin: 13rem 0;
   }
 }

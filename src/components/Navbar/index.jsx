@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import Logo from "../../assets/icon/brandLogo.png"
 
 export const Navbar = () => {
@@ -10,8 +9,8 @@ export const Navbar = () => {
     ]
 
     return (
-        <header className="mb-10">
-            <nav className="navbar navbar-expand-lg fixed-top py-3 bg-light">
+        <header >
+            <nav className="navbar navbar-expand-lg fixed-top py-3 mx-4 bg-light">
                 <div className="container-xxl px-0">
                     <img src={Logo} alt="Healthify" className="brand-logo" />
                     <button
@@ -25,16 +24,16 @@ export const Navbar = () => {
                     >
                         <span className="navbar-toggler-icon" />
                     </button>
-                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div className="collapse navbar-collapse justify-content-end mt-3" id="navbarNav">
                         <ul className="navbar-nav">
                             {menus.map((menu, index) => (
                                 <li key={index} className="nav-item mx-3">
-                                    <Link
+                                    <a
                                         className="text-decoration-none fw-medium"
-                                        to={menu.href}
+                                        href={menu.href}
                                     >
                                         {menu.label}
-                                    </Link>
+                                    </a>
                                 </li>
                             ))
                             }
