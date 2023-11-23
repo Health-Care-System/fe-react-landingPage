@@ -1,8 +1,13 @@
 .card-box{
-    border-radius: 32px;
+    border-radius: 1.5rem;
     box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.10);
-    background-color: #b9b9b9;
     color: #FFF;
+}
+
+.join-us {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/image/joinUs.png");
 }
 
 .join{

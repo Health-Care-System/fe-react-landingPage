@@ -1,15 +1,27 @@
 .text-subline{
     color: #07287C;
 }
+.max-w-15 {
+  max-width: 15.875rem;
+}
 
 .kotak {
-    margin-bottom: 2rem;
-  }
+  padding: 2.0625rem 0rem; 
+  margin-bottom: 2rem;
+}
+
+.shadow{
+  display: none;
+}
   
   @media (min-width: 576px) {
     .kotak {
       margin-bottom: 2rem;
     }
+    .shadow{
+      display: block;
+    }
+      
   }
   
   @media (min-width: 768px) {
