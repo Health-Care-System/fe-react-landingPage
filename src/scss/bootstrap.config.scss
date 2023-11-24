@@ -14,7 +14,12 @@ $container-max-widths: (
   xxl: 1320px
 );
 
+
 // Typography
 $font-family-base: 'Roboto', 'Poppins', sans-serif;;
+
+
+$accordion-button-icon: url(../assets/icon/arrow-down.svg);
+$accordion-button-active-icon: url(../assets/icon/arrow-up.svg);
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
