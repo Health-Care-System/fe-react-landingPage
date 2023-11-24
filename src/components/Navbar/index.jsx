@@ -2,17 +2,22 @@ import Logo from "../../assets/icon/brandLogo.png"
 
 export const Navbar = () => {
     const menus = [
-        { href: '#', label: 'Beranda' },
-        { href: '#', label: 'Tentang Kami' },
-        { href: '#', label: 'Layanan' },
-        { href: '#', label: 'FAQ' },
+        { href: '#mainHero', label: 'Beranda' },
+        { href: '#aboutUsHero', label: 'Tentang Kami' },
+        { href: '#serviceHero', label: 'Layanan' },
+        { href: '#faqSection', label: 'FAQ' },
     ]
 
     return (
         <header >
-            <nav className="navbar navbar-expand-lg fixed-top py-3 mx-4 bg-light">
-                <div className="container-xxl px-0">
-                    <img src={Logo} alt="Healthify" className="brand-logo" />
+            <nav className="navbar navbar-expand-lg fixed-top py-3 px-3 bg-light">
+                <div className="container-xxl d-flex flex-row justify-content-between px-0">
+                    <img
+                        width={231}
+                        height={62}
+                        src={Logo} 
+                        alt="Healthify" 
+                        className="brand-logo" />
                     <button
                         className="navbar-toggler"
                         type="button"
