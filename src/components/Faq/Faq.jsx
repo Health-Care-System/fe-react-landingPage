@@ -1,6 +1,6 @@
 export const Faq = () => {
   return (
-    <div className="container">
+    <section id="faqSection" className="container">
       <div className="text-center" style={{ marginBottom: '3rem' }}>
         <h3 className="fw-bold mt-5 text-primary fs-2">Frequently Asked Question</h3>
         <div className="col-lg-6 mx-auto">
@@ -9,6 +9,6 @@ export const Faq = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

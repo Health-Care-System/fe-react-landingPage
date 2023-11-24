@@ -1,8 +1,8 @@
-import gmail from '../../image/mail.svg'
+import gmail from '../../assets/icon/mail.svg'
 import Logo from '../../assets/icon/brandLogo.png'
-import insta from '../../image/instagram.svg'
-import phone from '../../image/phone.svg'
-import Play from "../../image/Group.svg"
+import insta from '../../assets/icon/instagram.svg'
+import phone from '../../assets/icon/phone.svg'
+import Play from "../../assets/icon/Group.svg"
 import "./Footer.css"
 
 export const Footer = () => {
@@ -14,13 +14,18 @@ export const Footer = () => {
     ]
 
     return (
-        <footer className='bg-green-300 text-white'>
+        <footer id='detailsFooter' className='bg-green-300 text-white'>
             <div className='mx-auto' style={{ maxWidth:'86rem'}}>
                 <div className="pt-5 pb-3 mx-4">
                     <a href="#">
-                        <img src={Logo} alt="Bootstrap" />
+                        <img 
+                        width={231}
+                        height={62}
+                        src={Logo} 
+                        alt="Healthify" 
+                        />
                     </a>
-                    <div className="row mt-3">
+                    <div className="row mt-4">
                         <ListItem data={company} title={'Perusahaan'} haveImage={false} />
                         <ListItem data={callUs} title={'Hubungi Kami'} haveImage={true} />
                         <div className="col-xl-6 col-md-6 mb-4 mb-md-0" >
@@ -35,7 +40,12 @@ export const Footer = () => {
                         </div>
                         <div className="col-xl-2 col-md-6 mb-4 mb-md-0">
                             <h5>Download Aplikasi di</h5>
-                            <a href="https://play.google.com">
+                            <a 
+                                href="https://play.google.com" 
+                                target='_blank' 
+                                rel='noreferrer' 
+                                aria-label='navigation to google playstore'
+                                name='playstoreNavigation'>
                                 <img src={Play} alt="play" className="mt-2 mb-md-3 image-play" />
                             </a>
                         </div>
@@ -61,7 +71,12 @@ export const ListItem = ({ data, title, haveImage }) => {
                             <a href="#" className="nav-link p-0 text-white">
                                 {haveImage
                                     ? <>
-                                        <img src={item.icon} alt={item.label} className="me-2" height={24} />
+                                        <img 
+                                            src={item.icon} 
+                                            alt='' 
+                                            className="me-2" 
+                                            width={24}
+                                            height={24} />
                                         {item.label}
                                     </>
                                     : item

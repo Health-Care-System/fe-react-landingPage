@@ -40,14 +40,16 @@ body{
 }
 
 .brand-logo {
-  width: 8.4rem;
+  transform: scale(0.6);
+  margin-left: -3rem;
 }
 
 @media (min-width: 768px) {
   .brand-logo {
-    width: 14.4375rem;
+    transform: scale(1);
+    margin-left: 0;
   }
   .my-10 {
-    margin: 13rem 0;
+    margin: 10rem 0;
   }
 }

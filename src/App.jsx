@@ -16,8 +16,9 @@ function App() {
   return (
     <>
       <Navbar/>
-      <main>
+      <main className='mt-md-5 mt-xl-0'>
       <Hero
+         idSection={'mainHero'}
          isReverse={true}
          image={HeroDoc}
          heading="Wujudkan Kesehatanmu Untuk Hidup Bahagia Kini Dan Nanti"
@@ -26,6 +27,7 @@ function App() {
          maxWTitle={'41.625rem'}
       />
       <Hero
+         idSection={'aboutUsHero'}
          isReverse={false}
          image={mockup3phone}
          heading="Wujudkan Hidup Sehat Bersama Healthify !"
@@ -34,6 +36,7 @@ function App() {
          maxWTitle={'38.75rem'}
       />
       <Hero
+         idSection={'serviceHero'}
          isReverse={true}
          image={obatOnline}
          heading="Cari Obat-Obatan Online Tanpa Ribet"
@@ -42,6 +45,7 @@ function App() {
          maxWTitle={'41.4375rem'}
       />
       <Hero
+         idSection={'consultationHero'}
          isReverse={false}
          image={konsultasi}
          heading="Butuh Konsultasi ? Dokter Selalu Ada Buat Kamu "
@@ -51,6 +55,7 @@ function App() {
       />
       <Pelayanan/>
       <Hero
+         idSection={'doctorServiceHero'}
          isReverse={true}
          image={mockupMobileApp}
          heading="Pilih Dokter Sesuai Dengan Kebutuhan Kamu"
@@ -58,6 +63,7 @@ function App() {
          maxWTitle={'41.4375rem'}
       />
       <Hero
+         idSection={'benefit1Hero'}
          isReverse={false}
          image={nabung}
          heading="Hemat Waktu dan Hemat Biaya"
@@ -65,6 +71,7 @@ function App() {
          maxWTitle={'37.5rem'}
       />
       <Hero
+         idSection={'downloadAppHero'}
          isReverse={true}
          image={androidVector}
          heading="Download Sekarang dan Mulai Hidup Sehat !"
