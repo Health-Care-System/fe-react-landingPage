@@ -18,7 +18,7 @@ export const HomePage = () => {
   return (
     <div>
       <Navbar/>
-      <main className="mt-5">
+      <main className="mt-5 container-xxl">
       <Hero
          isReverse={true}
          image={HeroDoc}

@@ -6,11 +6,15 @@ import Play from "../../assets/icon/Group.svg"
 import "./Footer.css"
 
 export const Footer = () => {
-    const company = ['Tentang Kami', 'Layanan', 'Produk']
+    const company = [
+    {label: 'Tentang Kami', href: '#aboutUsHero'},
+    {label: 'Layanan', href: '#serviceHero'},
+    {label: 'FAQ', href: '#faqSection'},
+    ]
     const callUs = [
-        { icon: gmail, label: 'healthify@gmail.com' },
-        { icon: insta, label: 'healthify_healthcare' },
-        { icon: phone, label: '+62-345-678-910' },
+        { icon: gmail, label: 'healthify@gmail.com', href: '#' },
+        { icon: insta, label: 'healthify_healthcare', href: '#' },
+        { icon: phone, label: '+62-345-678-910', href: '#' },
     ]
 
     return (
@@ -68,7 +72,7 @@ export const ListItem = ({ data, title, haveImage }) => {
                 <ul className="nav flex-column">
                     {data?.map((item, index) => (
                         <li key={index} className="nav-item mb-2">
-                            <a href="#" className="nav-link p-0 text-white">
+                            <a href={item.href} className="nav-link p-0 text-white">
                                 {haveImage
                                     ? <>
                                         <img 
@@ -79,7 +83,7 @@ export const ListItem = ({ data, title, haveImage }) => {
                                             height={24} />
                                         {item.label}
                                     </>
-                                    : item
+                                    : item.label
                                 }
 
                             </a>
