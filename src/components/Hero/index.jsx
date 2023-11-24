@@ -1,4 +1,4 @@
-import Play from "../../image/Group.svg"
+import Play from "../../assets/icon/Group.svg"
 import "./Hero.css"
 export const Hero = ({
     isReverse,
@@ -11,10 +11,12 @@ export const Hero = ({
 }) => {
     const imageClass = isReverse ? "order-md-last" : "order-md-first";
     return (
-        <section id={idSection} className="container-xxl px-4 px-md-0 d-flex flex-column flex-md-row justify-content-between mx-auto" style={{ padding: '4rem 0' }}>
+        <section id={idSection} className="container-xxl px-4 px-xl-0 gap-5 gap-lg-0 d-flex flex-column flex-md-row justify-content-between mx-auto" style={{ padding: '4rem 0' }}>
             <div className={`${imageClass}`}>
                 <img
                     src={image}
+                    width={640}
+                    height={360}
                     className="hero-image img-fluid"
                     alt="Hero image"
                 />
@@ -29,8 +31,17 @@ export const Hero = ({
                 </p>
                 }
                 {showPlay && (
-                    <a target="_blank" rel="noreferrer" href="https://play.google.com">
-                        <img src={Play} className="img-play" alt="" />
+                    <a 
+                        target="_blank" 
+                        name={'googlePlayNavigation'} 
+                        rel="noreferrer" 
+                        aria-label='navigation to google playstore'
+                        href="https://play.google.com">
+                        <img 
+                        src={Play} 
+                        width={200}
+                        height={58}
+                        className="img-play" alt="" />
                     </a>
                 )}
             </div>
