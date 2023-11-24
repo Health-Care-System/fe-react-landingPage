@@ -1,0 +1,15 @@
+.nav-item-a { 
+  text-decoration: none;
+  text-decoration-thickness: 2px;
+  color: #008772;
+}
+.nav-item-a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #008772;
+}
+.nav-item-active {
+  color: #00444E;
+  text-decoration: none;
+  border-bottom: 2px solid #00444E;
+}

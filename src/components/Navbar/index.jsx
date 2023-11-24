@@ -1,4 +1,6 @@
 import Logo from "../../assets/icon/brandLogo.png"
+import './navbar.css'
+import { useLocation } from "react-router-dom"
 
 export const Navbar = () => {
     const menus = [
@@ -8,15 +10,17 @@ export const Navbar = () => {
         { href: '#faqSection', label: 'FAQ' },
     ]
 
+    const location = useLocation()
+    const hash = location.hash
     return (
         <header >
-            <nav className="navbar navbar-expand-lg fixed-top py-3 px-3 bg-light">
+            <nav className="navbar navbar-expand-lg fixed-top py-3 px-3 px-md-4 px-xxl-0 bg-light">
                 <div className="container-xxl d-flex flex-row justify-content-between px-0">
                     <img
                         width={231}
                         height={62}
-                        src={Logo} 
-                        alt="Healthify" 
+                        src={Logo}
+                        alt="Healthify"
                         className="brand-logo" />
                     <button
                         className="navbar-toggler"
@@ -32,9 +36,9 @@ export const Navbar = () => {
                     <div className="collapse navbar-collapse justify-content-end mt-3" id="navbarNav">
                         <ul className="navbar-nav">
                             {menus.map((menu, index) => (
-                                <li key={index} className="nav-item mx-3">
+                                <li key={index} className="nav-item link-offset-3-hover mx-3">
                                     <a
-                                        className="text-decoration-none fw-medium"
+                                        className={`fw-medium ${menu.href === hash ? 'nav-item-active' : 'nav-item-a'}`}
                                         href={menu.href}
                                     >
                                         {menu.label}
