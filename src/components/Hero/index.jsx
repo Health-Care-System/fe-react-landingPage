@@ -11,7 +11,7 @@ export const Hero = ({
 }) => {
     const imageClass = isReverse ? "order-md-last" : "order-md-first";
     return (
-        <section id={idSection} className="container-xxl px-4 px-xl-0 gap-5 gap-lg-0 d-flex flex-column flex-md-row justify-content-between mx-auto" style={{ padding: '4rem 0' }}>
+        <section id={idSection} className="container-xxl px-4 px-lg-5 px-xxl-0 gap-5 gap-lg-0 d-flex flex-column flex-md-row justify-content-between mx-auto" style={{ padding: '4rem 0' }}>
             <div className={`${imageClass}`}>
                 <img
                     src={image}
